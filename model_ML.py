@@ -3,9 +3,9 @@ from keras.layers import CuDNNLSTM
 from keras.layers import Dense, TimeDistributed
 from keras.layers import Dropout, GlobalAveragePooling2D
 from tensorflow.python.keras import optimizers
-from keras.applications import MobileNetV2
+# from keras.applications import MobileNetV2
 from keras import backend as K
-
+from keras.applications.mobilenet_v2 import MobileNetV2
 from keras.models import Model
 
 def create_model_pretrain(dim, n_sequence, n_channels, n_output):
